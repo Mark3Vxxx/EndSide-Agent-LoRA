@@ -1,0 +1,16 @@
+model: "./qwen-3b"
+train: true
+data: "./data"
+seed: 42
+num_layers: 16
+batch_size: 2
+iters: 100
+val_batches: 2
+learning_rate: 1e-4
+steps_per_report: 20
+steps_per_eval: 20
+adapter_path: "./adapters-r4"
+lora_parameters:
+  rank: 4
+  scale: 2.0
+  dropout: 0.05

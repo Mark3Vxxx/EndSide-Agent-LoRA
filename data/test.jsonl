@@ -1,0 +1,12 @@
+{"query": "帮我查一下单号 ORD-2026098 的物流到哪了", "expected": {"tool": "query_order", "arguments": {"order_id": "ORD-2026098"}}}
+{"query": "看看 ORD-112233 现在发货没", "expected": {"tool": "query_order", "arguments": {"order_id": "ORD-112233"}}}
+{"query": "单号 ORD-55667 帮我取消吧，我拍重了", "expected": {"tool": "cancel_order", "arguments": {"order_id": "ORD-55667", "reason": "拍重了"}}}
+{"query": "退掉订单 ORD-88990，不想要了", "expected": {"tool": "cancel_order", "arguments": {"order_id": "ORD-88990", "reason": "不想要了"}}}
+{"query": "帮我查一下杭州还有没有 SKU-7788", "expected": {"tool": "check_inventory", "arguments": {"sku_id": "SKU-7788", "city": "杭州"}}}
+{"query": "成都仓库 SKU-3090 还有库存吗", "expected": {"tool": "check_inventory", "arguments": {"sku_id": "SKU-3090", "city": "成都"}}}
+{"query": "给我转接一下售后人工客服", "expected": {"tool": "transfer_human", "arguments": {"department": "售后"}}}
+{"query": "我要找财务组的人工", "expected": {"tool": "transfer_human", "arguments": {"department": "财务组"}}}
+{"query": "帮我取消一下那个订单", "expected": {"tool": "ask_clarification", "arguments": {"missing_params": ["order_id", "reason"]}}}
+{"query": "查一下 SKU-6611 还有没有货", "expected": {"tool": "ask_clarification", "arguments": {"missing_params": ["city"]}}}
+{"query": "今天深圳会下雨吗？", "expected": {"tool": "none", "arguments": {"reason": "out_of_scope"}}}
+{"query": "给我讲个程序员的笑话", "expected": {"tool": "none", "arguments": {"reason": "out_of_scope"}}}

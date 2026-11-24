@@ -1,0 +1,19 @@
+# Python 3.11 · Apple Silicon (MLX)
+# 版本取自已验证可运行的 lora-mlx 环境
+mlx==0.32.4
+mlx-lm==0.32.2
+
+# 训练追踪
+swanlab[dashboard]==0.10.6
+
+# 推理网关与压测
+fastapi==0.165.0
+uvicorn==0.54.0
+httpx==0.28.1
+
+# A/B 对比演示台
+gradio==6.32.0
+
+# 配置与工具
+pyyaml==6.0.4
+transformers==5.24.0

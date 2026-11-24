@@ -1,0 +1,20 @@
+# ---- 模型权重与适配器（体积大，可由 README 命令重新生成）----
+qwen-3b/
+qwen-3b-*/
+adapters-*/
+*.safetensors
+*.safetensors.index.json
+
+# ---- 训练追踪日志（本地看板，可用 swanlab watch 重建）----
+swanlog/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# ---- macOS ----
+.DS_Store
